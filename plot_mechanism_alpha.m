@@ -61,7 +61,9 @@ for alpha = [2 3 4]
     clim([-3 3]);
     colorcet('L20');
     axis off;
-    high_quality_png(strcat('output/instab_alp_', num2str(alpha), '.png'));
+    %high_quality_png(strcat('output/instab_alp_', num2str(alpha), '.png'));
+    colorcet('L17');
+    high_quality_png(strcat('output/ga_instab_alp_', num2str(alpha), '.png'));
     hold on;
     quiver(X(:, [1:20:200, 200]), Y(:, [1:20:200, 200]), UX(:, [1:20:200, 200]), UZ(:, [1:20:200, 200]));
 
